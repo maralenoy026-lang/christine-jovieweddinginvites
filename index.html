@@ -397,7 +397,7 @@
             const pass = document.getElementById('clear-pass-input').value;
             if (pass === '2026') {
                 rsvpList = []; // Permanently clears all RSVP entries forever in session memory
-                updateDashboardStats();
+                updateDashboardStats(); // Instantly re-renders the stats and empty guest list
                 closeClearPassModal();
                 showCustomMessage('All RSVP records have been permanently deleted forever.');
             } else {
